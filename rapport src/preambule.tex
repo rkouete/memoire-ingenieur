@@ -1,0 +1,114 @@
+\documentclass[a4 paper,12pt,english,french]{report}%report est utilis´e pour les documents plus longs qui doivent être découpés en chapitres (en effet, la classe article ne gère pas les chapitres)
+\usepackage{calc}
+\usepackage[all]{xy}
+\usepackage{setspace}
+%\usepackage[latin1]{inputenc}
+\usepackage[english,french]{babel}
+\usepackage{t1enc}
+\usepackage[centertags]{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{url}
+\usepackage{pifont}
+\usepackage[table]{xcolor}
+\usepackage{fancybox}
+\usepackage{newlfont}
+\usepackage [dvips]{epsfig}
+\usepackage{colortbl}
+\usepackage[T1]{fontenc}
+\usepackage{dsfont}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{color}% insertion d'une figure à partir d'un document pdf
+\usepackage{pdfpages}%pour importer des fichiers pdf.
+\usepackage{multicol}
+\usepackage{fancyhdr}
+%\usepackage[thmmarks]{ntheorem}
+\usepackage{amsmath}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{natbib}
+\usepackage[utf8]{inputenc}
+
+\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thepage}{\roman{page}}
+\renewcommand{\baselinestretch}{1.2}
+
+
+
+
+
+\pagestyle{fancy}%configuration du style
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter .\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection .\ #1}}
+
+\newcommand{\encad}[1]{%
+\fbox{\begin{minipage}[t]{0.75\linewidth}%
+#1\end{minipage}}}
+
+%{%
+%\theoremheaderfont{\sffamily\bfseries} \theorembodyfont{\sffamily}
+%\newtheorem{Def}{Définition}
+%}
+
+
+\renewcommand{\headrulewidth}{1.5pt}
+\addtolength{\headheight}{1.pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+ %\lfoot{\scriptsize
+%{\emph{Cours de Géométrie 4ème Redigé par : Koguem Simo Vanessa
+%}$\star$ \emph{}}} \cfoot{}
+%\rfoot{\scriptsize\emph{option : informatique fondamentale 2014-2015}}%%configuration du nom de l'auteur pour les bas de page du livre
+
+
+
+\makeatletter
+
+
+\fancyhf{} % supprime les en-têtes et pieds pr\'ed\'efinis
+\fancyhead[L,R]{}% Left Even, Right Odd
+\fancyhead[LE,LO]{TPE ANALYSE GENERALE MAM 11 } % Left Odd
+%\fancyhead[RE,RO]{\leftmark} % Right Even
+\fancyfoot[LO]{ INFO-FONDA GROUPE4} \fancyfoot[R]{ENS MAROUA}
+\fancyfoot[CE,CO]{\thepage}
+\fancypagestyle{plain}{ % pages de tetes de chapitre
+%\fancyhead{} % supprime l'entete
+%\fancyfoot{} %supprime le pied de page
+\renewcommand{\headrulewidth}{0.4pt} % et le filet
+%\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{1.pt} }
+
+ \fancyhead[RO,RE]{\nouppercase{{\bfseries\leftmark}}}
+%\fancyhead[LO]{}
+%\fancyfoot[C]{\thepage}
+\usepackage{setspace}
+\setstretch{1,5}
+\renewcommand{\familydefault}{ptm}
+\selectfont
+
+
+\newcommand{\clearemptydoublepage}{%
+\newpage{\pagestyle{plain}\cleardoublepage \renewcommand{\headrulewidth}{0pt}\addtolength{\headheight}{10pt}}
+}
+\lhead{\textsl{chapitre \thechapter}}
+\rhead{\textsl{\leftmark }}
+
+%\title{\LARGE{PLAN DE GEOMETRIE CLASSE DE $4^{eme}$}}
+%\vspace{4cm}
+%\author{ PROPOSE PAR :KOGUEM SIMO VANESSA}
+%\date{Novembre 2014}
+\setlength{\arrayrulewidth}{1pt}
+
+
+
+
+
+
+
+
+
+
+
+
+

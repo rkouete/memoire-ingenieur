@@ -1,0 +1,152 @@
+%% Based on a TeXnicCenter-Template by Tino Weinkauf.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,twoside,12pt,draft]{report}
+% Alternative Options:
+%	Paper Size: a4paper / a5paper / b5paper / letterpaper / legalpaper / executivepaper
+% Duplex: oneside / twoside
+% Base Font Size: 10pt / 11pt / 12pt
+
+
+%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[T1]{fontenc}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{lmodern} %Type1-font for non-english texts and characters
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{color}
+\usepackage{natbib}
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%For loading graphic files
+%\usepackage{subfig} %%Subfigures inside a figure
+%\usepackage{pst-all} %%PSTricks - not useable with pdfLaTeX
+
+%% Please note:
+%% Images can be included using \includegraphics{Dateiname}
+%% resp. using the dialog in the Insert menu.
+%% 
+%% The mode "LaTeX => PDF" allows the following formats:
+%%   .jpg  .png  .pdf  .mps
+%% 
+%% The modes "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
+%% allow the following formats:
+%%   .eps  .ps  .bmp  .pict  .pntg
+
+
+%% Math Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thepage}{\roman{page}}
+\renewcommand{\baselinestretch}{1.2}
+%% Line Spacing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{setspace}
+%\singlespacing        %% 1-spacing (default)
+%\onehalfspacing       %% 1,5-spacing
+%\doublespacing        %% 2-spacing
+
+
+%% Other Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{a4wide} %%Smaller margins = more text per page.
+\usepackage{fancyhdr} %%Fancy headings
+%\usepackage{longtable} %%For tables, that exceed one page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\newfont{\mafonte}{cmr 12 at 13pt}
+%\AtBeginDocument{\mafonte}
+
+\normalsize{\fontsize{13}{15}\selectfont}
+\large{\fontsize{13}{17}\selectfont}
+
+\fancyhf{} % supprime les en-têtes et pieds pr\'ed\'efinis
+\fancyhead[L,R]{}% Left Even, Right Odd
+%\fancyhead[LE,LO]{TPE ANALYSE GENERALE MAM 11 } % Left Odd
+%\fancyhead[RE,RO]{\leftmark} % Right Even
+\fancyfoot[LO,LE]{mémoire rédigé et soutenu par KOUETE Rodrigue} \fancyfoot[R]{\thepage}
+
+\fancyfoot[CE,CO]{}
+\fancypagestyle{plain}{ % pages de tetes de chapitre
+\fancyhead{} % supprime l'entete
+%\fancyfoot{} %supprime le pied de page
+\renewcommand{\headrulewidth}{0pt} % et le filet
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{1.pt} }
+
+ \fancyhead[RO,RE]{\nouppercase{{\bfseries\leftmark}}}
+\renewcommand{\headsep}{15pt}
+
+
+\input{dedicace.tex}
+
+\input{remerciement.tex}
+
+
+%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Write your text here or include other files.
+
+
+%% The nice version:
+%\input{titlepage} %%You need a file 'titlepage.tex' for this.
+%% ==> TeXnicCenter supplies a possible titlepage file
+%% ==> with its templates (File | New from Template...).
+
+
+%% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents %Table of contents
+
+\input{sigles.tex}
+
+
+\input{resume.tex}
+
+\input{abstract.tex}
+
+
+
+%% The List of Figures
+\clearpage
+
+\addcontentsline{toc}{chapter}{Liste des figures et illustrations}
+\listoffigures
+
+%% The List of Tables
+\clearpage
+
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\listoftables
+
+
+%\pagestyle{plain} %Now display headings: headings / fancy / ...
+
+\input{introduction.tex}
+
+\input{contexte.tex}
+
+\input{generalite.tex}
+
+
+\input{conclusion.tex}
+
+\bibliographystyle{plainnat} % or try unsrtnat or plainnat abbrvnat
+\bibliography{biblio} % refers to biblio.bib
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% APPENDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+%% ==> Write your text here or include other files.
+
+%\input{FileName} %You need a file 'FileName.tex' for this.
+
+
+\end{document}
+

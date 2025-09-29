@@ -1,0 +1,198 @@
+%% Based on a TeXnicCenter-Template by Tino Weinkauf.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,twoside,12pt]{report}
+% Alternative Options:
+%	Paper Size: a4paper / a5paper / b5paper / letterpaper / legalpaper / executivepaper
+% Duplex: oneside / twoside
+% Base Font Size: 10pt / 11pt / 12pt
+
+
+%% Language %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[T1]{fontenc}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{lmodern} %Type1-font for non-english texts and characters
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{color}
+\usepackage{natbib}
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%For loading graphic files
+%\usepackage{subfig} %%Subfigures inside a figure
+%\usepackage{pst-all} %%PSTricks - not useable with pdfLaTeX
+
+%% Please note:
+%% Images can be included using \includegraphics{Dateiname}
+%% resp. using the dialog in the Insert menu.
+%% 
+%% The mode "LaTeX => PDF" allows the following formats:
+%%   .jpg  .png  .pdf  .mps
+%% 
+%% The modes "LaTeX => DVI", "LaTeX => PS" und "LaTeX => PS => PDF"
+%% allow the following formats:
+%%   .eps  .ps  .bmp  .pict  .pntg
+
+
+%% Math Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{textcomp}
+\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thepage}{\roman{page}}
+%\renewcommand{\baselinestretch}{1.2}
+%% Line Spacing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+%\singlespacing        %% 1-spacing (default)
+\onehalfspacing       %% 1,5-spacing
+%\doublespacing        %% 2-spacing
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{2}
+%% Other Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{a4wide} %%Smaller margins = more text per page.
+\usepackage{fancyhdr} %%Fancy headings
+%\usepackage{longtable} %%For tables, that exceed one page
+%d\'efinition des entêtes
+\usepackage{url}
+\pagestyle{fancy}
+\usepackage [dvips]{epsfig}
+\usepackage{hyperref}
+ \usepackage[utf8]{inputenc} 
+ \usepackage[T1]{fontenc} 
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{slashbox}
+\setstretch{1,5}
+\renewcommand{\familydefault}{ptm}
+\selectfont
+\addto\captionsfrench{\def\figurename{{Figure}}}
+\addto\captionsfrench{\def\tablename{{Tableau}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%\newfont{\mafonte}{cmr 12 at 13pt}
+%\AtBeginDocument{\mafonte}
+
+\normalsize{\fontsize{13}{13}\selectfont}
+\fontsize{13}{13}\selectfont
+
+\fancyhf{} % supprime les en-têtes et pieds pr\'ed\'efinis
+%\fancyhead[LO,RE]{}% Left Even, Right Odd
+%\fancyhead[L]{\bfseries\rightmark} % Left Odd
+%\fancyhead[R]{\bfseries\leftmark} % Right Even
+\fancyfoot[LE,LO]{}
+\fancyfoot[RO,RE]{\thepage}
+%\textbf{UNIVERSIT\'{E} DE MAROUA 2015 - 2016} } }
+%\fancyfoot[LO,RE]{\tiny \textbf {Rédigé Mouafo } \textbf{\copyright} \textbf{ENS.MAROUA 2015}}
+\renewcommand
+{\footnoterule}{
+\vspace*{0.5cm}
+\hfill  \hfill 
+}
+\renewcommand{\headrulewidth}{1.pt}% filet en haut de page
+\addtolength{\headheight}{4pt} % espace pour le filet
+\renewcommand{\footrulewidth}{1.pt}% filet en bas de page
+%\addtolength{\footheight}{10pt} % espace pour le filet en bas
+\fancypagestyle{plain}{ % pages de tetes de chapitre
+\fancyhead{} % supprime l'entete
+%\fancyfoot{} %supprime le pied de page
+\renewcommand{\headrulewidth}{0pt} % et le filet
+%\renewcommand{\footrulewidth}{0pt}
+}
+\newcommand{\clearemptydoublepage}{%
+\newpage{\pagestyle{plain}\cleardoublepage \renewcommand{\headrulewidth}{0pt}\addtolength{\headheight}{4pt}}
+}
+\lhead{\textsl{chapitre \thechapter}}
+\rhead{\textsl{\leftmark }}
+
+%\lfoot{\footnotesize{\textbf{Mémoire de MASTER II }}}
+% Ceci permet d'avoir les noms de chapitre et de section
+% en minuscules
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\headsep}{20pt}
+
+
+\input{dedicace.tex}
+
+\input{remerciement.tex}
+
+
+%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ==> Write your text here or include other files.
+
+
+%% The nice version:
+%\input{titlepage} %%You need a file 'titlepage.tex' for this.
+%% ==> TeXnicCenter supplies a possible titlepage file
+%% ==> with its templates (File | New from Template...).
+
+
+%% Inhaltsverzeichnis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents %Table of contents
+
+\input{sigles.tex}
+
+
+\input{resume.tex}
+
+\input{abstract.tex}
+
+
+
+%% The List of Figures
+\clearpage
+
+\addcontentsline{toc}{chapter}{Liste des figures et illustrations}
+\listoffigures
+
+%% The List of Tables
+\clearpage
+
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\listoftables
+
+
+%\pagestyle{plain} %Now display headings: headings / fancy / ...
+
+\input{introduction.tex}
+
+\input{contexte.tex}
+
+\input{generalite.tex}
+
+\input{etatArt.tex}
+
+\input{implementation.tex}
+
+\input{resultat.tex}
+
+\input{conclusion.tex}
+\addcontentsline{toc}{chapter}{Bibliographie}
+\bibliographystyle{plain} % or try unsrtnat or plainnat 
+\bibliography{biblio} % refers to biblio.bib
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% APPENDICES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+%% ==> Write your text here or include other files.
+
+%\input{FileName} %You need a file 'FileName.tex' for this.
+
+
+\end{document}
+

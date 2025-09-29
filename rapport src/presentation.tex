@@ -1,0 +1,417 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Beamer arrows
+%
+% Source: http://www.texample.net/
+% Feel free to distribute this template, but please keep the
+% referal to TeXample.net.
+% Date: Nov 2006
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{beamer} %
+\usetheme{Boadilla}
+\usepackage[latin1]{inputenc}
+\usefonttheme{professionalfonts}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage[frenchb]{babel}
+\usepackage{multicol}
+\usetikzlibrary{arrows,shapes}
+%\setbeamersize{text margin left=100pt}
+%couleurs
+\usecolortheme[RGB={0, 142, 142}]{structure}
+\definecolor{texte}{RGB}{24, 57, 30} % bleu sacarelle
+\definecolor{coultitre}{rgb}{0.41,0.05,0.05} % marron
+\setbeamercolor{normal text}{fg=texte,bg=white}
+
+%\setbeamercolor{structure}{fg=coultitre, bg=fondtitre!40}
+
+
+\logo{\includegraphics[height=0.5cm]{logoUMa.PNG}}
+\newtheorem{code}{code HTML}
+
+\title[Mémoire de DI.P.E.S. II]{CONCEPTION D'UN FORUM DE CONNAISANCES \\ ET D'UN TUTORIEL POUR APPRENTISSAGE}
+\subtitle{par}
+\author[KOUETE$$\&$$ MEDOM DEFOGANG]{KOUETE Rodrigue et MEDOM DEFOGANG C.}
+\titlegraphic{\includegraphics[width=1cm]{logoUMa.PNG}}
+\institute[UMa]{Université de Maroua}
+\date{22 Mai 2016}
+
+
+
+\begin{document}
+
+
+
+%%Debut du document
+%\begin{frame}
+%\titlepage
+%\end{frame}
+\begin{frame}
+
+\begin{multicols}{3}\setlength{\columnseprule}{0.0pt}
+\begin{center}
+\scriptsize{Université de Maroua }\\\scriptsize{*******}\\
+
+\scriptsize{Ecole Normale Supérieure}\\\scriptsize{*******}\\
+
+\scriptsize{Département D'Informatique}\\\scriptsize{*******}
+
+\end{center}
+
+\begin{center}
+\includegraphics[height=2.5cm]{logoUMa.PNG}
+
+\end{center}
+
+\begin{center}
+
+\scriptsize{The University Of Maroua}\\\scriptsize{**********}\\
+
+\scriptsize{Higher Teacher's Training College}\\\scriptsize{*******}\\
+
+\scriptsize{Department of Computer Science}\\\scriptsize{ *******}\\
+
+\end{center}
+
+\end{multicols}
+\begin{center}
+\scriptsize{Informatique Fondamentale}
+\end{center}
+
+\begin{center}
+\large {\textcolor[RGB]{0,142,142}{CONCEPTION D'UN FORUM DE CONNAISSANCES \\ ET D'UN TUTORIEL POUR APPRENTISSAGE}}
+\end{center}
+\begin{center}
+\scriptsize{Mémoire présenté en vu de l'obtention du Diplôme de Professeur de l'Enseignement Secondaire Générale, deuxième grade (DIPES II)}
+\end{center}
+\begin{center}
+  \scriptsize{ par}
+\end{center}
+\scriptsize {KOUETE Rodrigue     \hspace{60pt}            (Licence en Informatique fondamentale)}\\
+\scriptsize {MEDOM DEFOGANG Tobias Cristel   (Licence en Informatique fondamentale)}\\
+
+\begin{center}
+  \scriptsize{sous la direction de}\\
+Dr. VIDEME BOSSOU Olivier\\
+\scriptsize{Chargé de Cours}\\
+\end{center}
+\begin{center}
+ \scriptsize{Année Académique 2015-2016}
+\end{center}
+\end{frame}
+
+\section*{Plan}
+\begin{frame}{\secname}
+\tableofcontents[sectionstyle=show,pausesections,hideallsubsections]
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{\secname}
+\begin{itemize}
+	\item L'éducation est un facteur très important dans le développement du monde \vspace*{0.5cm}
+	\pause
+	\item Aujourd'hui, avec l'avènement des TIC, les formations à distance se développent de plus en plus \vspace*{0.5cm}
+	\pause
+  \item À travers les plates-formes de formation à distance, les acteurs de l'éducation partagent des ressources (contenus de formations), des outils de communication (forum, chat).\vspace*{0.5cm}
+	\pause
+	\item Cette émergence  favorise une construction collective des connaissances \vspace*{0.5cm}
+
+	
+\end{itemize}
+\end{frame}
+
+\section{Contexte et problématique}
+\subsection{Contexte }
+\begin{frame}{\secname}{\subsecname}
+\begin{itemize}
+   \item Il est de notoriété publique que les technologies informatiques ont un impact certain sur l'éducation.
+     \vspace*{0.5cm} \pause
+	\item C'est l'une des raisons pour lesquelles le MINESEC a inscrit en juin 2003 ces technologies dans les programmes de formation de 1er et 2nd cycle de l'ESG
+ \vspace*{0.5cm} \pause
+  \item les TIC modifient favorablement les relations traditionnelles entre enseignant, apprenants et savoirs
+	\end{itemize}
+	
+	\end{frame}
+	
+	\subsection{Motivations }
+	\begin{frame}{\secname}{\subsecname}
+	 \begin{itemize}
+	\item Séances d'enseignement/apprentissage en présentiel\\
+	\pause
+	\begin{itemize}
+		\item  l'apprenant se retrouve abandonné à lui-même \vspace*{0.5cm}
+		\item enseignants parfois indisponibles ou surchargés \vspace*{0.5cm}
+		\item classes à effectif pléthorique \vspace*{0.5cm}
+		\item quota horaire souvent insuffisant pour la formation \vspace*{0.5cm}
+		\item difficile de contacter l'enseignant en dehors de la classe
+	\end{itemize}
+	
+	%\item Il est de notoriété publique que les technologies informatiques ont un impact certain sur l'éducation 
+	\vspace*{0.5cm}
+	\pause
+	\item Peu sont les apprenants disposant de manuels scolaires
+%	\item C'est l'une des raisons pour lesquelles le MINESEC a inscrit en juin 2003 ces technologies dans les programmes de formation de $1^{er}$ et $2^{nd}$ cycle   \vspace*{0.5cm}
+	%\footnote{Arrêté $N^{o}$ 3475/D/63 du 17 juin 2003 portant introduction de l'informatique dans les programmes de formation des $1^{er}$ et $2^{nd}$ cycle de l'Enseignement Secondaire Général et des Écoles Normales d'Instituteur de l'Enseignement Technique} de l'ESG
+	%	\item Certains de ces applications modifient favorablement les relations traditionnelles entre enseignant, apprenants et savoirs  comme : le tutoriel et forum  
+		
+
+	
+\end{itemize}
+ 
+\end{frame}
+
+\subsection{Problématique}
+\begin{frame}{\secname}{\subsecname}
+\begin{block}{Problématique}
+comment utiliser les TIC pour remédier aux problèmes que soulève l'enseignement en présentiel ? \\
+\vspace*{1cm}
+\pause
+Comment faire pour aider les apprenants à s'auto-former de façon méthodique à travers les nouvelles technologies ?
+\end{block}
+\end{frame}
+
+
+\subsection{Objectifs}
+
+\begin{frame}{\secname}{\subsecname}
+Mettre sur pied un logiciel tutoriel permettant de : \vspace*{0.5cm}
+\begin{itemize}
+  \item accompagner des apprenants  associés  à  une  activité  d'apprentissage  donnée \vspace*{0.5cm}
+	\pause
+	\item soutenir l'élève lors de la résolution des problèmes complexes \vspace*{0.5cm}
+	\pause
+	\item développer les attitudes de travail collaboratif chez les apprenants \vspace*{0.5cm}
+	\pause
+	\item Attirer l'attention des enseignants sur le suivi des apprenants \vspace*{0.5cm}
+	 
+\end{itemize}
+\end{frame}
+
+
+\subsection{Méthodologie}
+\begin{frame}{\secname}{\subsecname}
+\begin{itemize}
+\item Recueil des besoins \vspace*{0.5cm}
+  \item Modélisation \vspace*{0.5cm}
+	\item Implémentation de l'application \vspace*{0.5cm}
+ \item Test de l'application \vspace*{0.5cm}
+\end{itemize}	
+\end{frame}
+\section{Généralités}
+
+\subsection{Rôle du tutoriel}
+\begin{frame}{\secname}{\subsecname}
+C'est un guide de présentation et d'initiation à l'utilisation d'un ensemble de notion. Il permet :
+ \vspace*{0.5cm}
+\begin{itemize}
+	\item l'ndividualisation de l'apprentissage\vspace*{0.5cm}
+	    
+			\begin{itemize}
+				\item C'est la mise en place du travail que l'on fait individuellement \vspace*{0.5cm}
+				
+			\end{itemize}
+			\pause
+			\item la personnalisation de l'apprentissage \vspace*{0.5cm}
+			\begin{itemize}
+	\item Permettre à l'apprenant de travailler en fonction de ce qui lui est propre, de ses intérêts, de ses besoins \vspace*{0.5cm} 
+   \item Faire de l'apprenant l'acteur principal de son apprentissage
+\end{itemize}
+\end{itemize}
+ 
+
+	
+\end{frame}
+\subsection{La place du forum dans l'apprentissage}
+\begin{frame}{\secname}{\subsecname}
+
+\begin{itemize}
+
+	\item C'est un lieu d'interactions sociales, de co-construction de connaissance, de partage d'expérience, de coopération et de collaboration. \vspace*{0.5cm}
+	%\item la dimension publique
+	\pause
+   \item Il permet:
+    
+		\begin{itemize}
+			\item  à un groupe d'utilisateurs d'échanger des messages au sujet d'un thème particulier
+			produire les écrits \vspace*{0.5cm}
+			\pause
+			\item garder des traces de toutes communications  \vspace*{0.5cm}
+			\pause
+			\item développer les compétences d'interaction écrite  \vspace*{0.5cm}
+		\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\section{Analyse et conception de l'application}
+\subsection{Processus de développement logiciel}
+	
+\begin{frame}{\secname}{\subsecname}
+	Un processus de développement définit une séquence d'étapes, en partie ordonnée, qui concoure à l'obtention d'un système logiciel.
+	\pause
+	\vspace*{1cm}
+	
+	Processus utilisé : Le processus 2TUP (Two Tracks Unified Process)
+\begin{itemize}
+		\item est un processus unifié \vspace*{0.5cm}
+		\pause
+		\item s'appuie sur UML tout au long du cycle de développement 
+
+	\end{itemize}
+	
+	
+\end{frame}
+\subsection{Identification des acteurs}
+\begin{frame}{\secname}{\subsecname}
+\begin{itemize}
+ \item l'apprenant\vspace*{0.5cm}
+\pause
+	\item l'enseignant ou le tuteur\vspace*{0.5cm}
+	\pause
+	\item l'administrateur\vspace*{0.5cm}
+
+	\end{itemize}
+\end{frame}
+
+\subsection{Les cas d'utilisations}
+
+\begin{frame}{\secname}{\subsecname}
+ 
+ \begin{itemize}
+	 \item suivre une formation (vidéo, pdf) \vspace*{0.5cm}
+	\pause
+	\item s'auto-évaluer à l'aide des quiz \vspace*{0.5cm}
+		\pause
+	\item créer un sujet sur le forum \vspace*{0.5cm}
+	\pause
+	\item contribuer à la résolution d'un problème \vspace*{0.5cm}
+	\pause 
+	\item  ajouter/supprimer un support de formation \vspace*{0.5cm}
+	\pause 
+	\item s'authentifier
+	
+
+ \end{itemize}
+\end{frame}
+
+\subsection{Diagramme des cas d'utilisations}
+
+\begin{frame}{\secname}{\subsecname}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[height=7cm,width=10cm]{use.JPG}
+	\caption{diagramme des cas d'utilisation}
+	\label{figure :use}
+\end{figure}
+\end{frame}
+
+
+\subsection{Diagramme d'activités}
+\begin{frame}{\secname}{\subsecname}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[height=7cm,width=10cm]{four.JPG}
+	\caption{diagramme d'activités}
+	\label{figure :four}
+\end{figure}
+\end{frame}
+
+\section{Implémentation et démonstration}
+
+\subsection{architecture de l'application}
+\begin{frame}{\secname}{\subsecname}
+Nous avons mis sur pied une application
+	\vspace*{0.5cm}
+	\begin{itemize}
+		\item distribuée \vspace*{0.5cm}
+		\pause
+		\item avec client lourd \vspace*{0.5cm}
+		\pause
+		\item utilisant RMI pour support de communication
+	\end{itemize}
+\end{frame}
+
+\subsection{Langage et outils utilisés}
+\begin{frame}{\secname}{\subsecname}	   
+		 
+		Notre avons utilisé :
+		\begin{itemize}
+			 \item\textit{ Java} comme langage de programmation grâce à portabilité, la richesse de son écosystème et de sa communauté \vspace*{0.5cm}
+			 \pause 
+			 \item \textit{ObjectDB} pour la persistance des données \vspace*{0.5cm}
+			 \pause 
+			\item \textit{Hot Potatoes} pour la réalisation des quiz \vspace*{0.5cm}
+			\pause 
+			\item \textit{Free Screen recorder} pour la capture des vidéos \vspace*{0.5cm}
+		 \end{itemize}
+\end{frame}
+  
+		
+
+\begin{frame}
+%\vspace*{2cm}
+	\begin{center}
+ {\huge		\textcolor[RGB]{0, 142, 142}{DEMONSTRATION}}\\
+					MGA\\
+					
+					\begin{figure}[htbp]
+						\centering
+							\includegraphics[height=2cm,width=2cm]{logo.jpg}
+					\end{figure}
+					
+	\end{center}
+\end{frame}
+
+
+\section{Conclusion et Perspectives}
+\subsection{Conclusion}
+\begin{frame}{\secname}{\subsecname}
+\begin{itemize}	
+\item Il était question de proposer un système d'assistance aux apprenants dans l'accomplissement de leur activité d'apprentissage
+	\vspace*{0.5cm}
+\pause
+ \item Notre solution a consisté en la mise sur pied d'un outil intégrant : 
+	\begin{itemize}
+		\item des cours vidéos (théoriques et pratiques)
+		\item des quiz pour l'auto-évaluation
+		\item un portail communautaire favorisant la communication entre apprenants
+	\end{itemize}
+	\vspace*{0.5cm}
+	\pause
+\item	Elle a été testée sur un groupe de 12 élèves de la classe de première parmi lesquels 8 ont apprécié.
+\end{itemize}
+\end{frame}
+
+
+\subsection{Perspective}
+\begin{frame}{\secname}{\subsecname}
+nous proposons de mettre une version un peu plus légère installable sur des tablettes et les téléphones androïd.
+\end{frame}
+
+\begin{frame}
+%\vspace*{2cm}
+	\begin{center}
+ {\large		\textcolor[RGB]{0, 142, 142}{NOUS VOUS REMERCIONS POUR \vspace*{1cm} \\ VOTRE AIMABLE ATTENTION !}}
+\vspace*{1cm} \\FIN
+	\end{center}
+\end{frame}
+
+\end{document}

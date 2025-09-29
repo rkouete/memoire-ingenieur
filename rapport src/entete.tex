@@ -1,0 +1,255 @@
+\documentclass[a4paper,openany,simplespacing]{report}%\documentclass[12pt,A4,french,oneside,leqno]{report}
+\usepackage{calc}
+\addtolength{\hoffset}{-2cm} \addtolength{\textwidth}{2cm}
+\addtolength{\voffset}{-2cm} \addtolength{\textheight}{2cm}
+\usepackage[all]{xy}
+\usepackage{pifont}
+\usepackage[centertags]{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+%\usepackage{mathptmx} %times new roman
+%\usepackage{times}
+%\renewcommand{\baselinestretch}{1.15}% interligne
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+%\usepackage[MnSymbol]{mathspec}
+%\setallmainfonts{Times New Roman}
+%\usepackage{lipsum,mathptmx,etoolbox}
+\usepackage{cases}
+%\usepackage{epsfig}
+\usepackage{graphics}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[T1]{fontenc}
+\textheight=24cm \textwidth=17cm \frenchspacing %\linespread{2.5}
+%d\'efinition des entêtes
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage [dvips]{epsfig}
+% Ceci permet d'avoir les noms de chapitre et de section
+% en minuscules
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+\fancyhf{} % supprime les en-têtes et pieds pr\'ed\'efinis
+\fancyhead[LO,RE]{\bfseries\thepage}% Left Even, Right Odd
+\fancyhead[L]{\bfseries\rightmark} % Left Odd
+\fancyhead[R]{\bfseries\leftmark} % Right Even
+\fancyfoot[LO,RE]{ \tiny \textbf{\textbf{CRYPTOSYT\`{E}MES BAS\'{E}S SUR LES COURBES ELLIPTIQUES ET ATTAQUES} }}
+\fancyfoot[LE,RO]{\tiny \textbf{\textbf{\copyright}
+\textbf{UNIVERSIT\'{E} DE MAROUA 2015 - 2016} }}
+%\fancyfoot[LO,RE]{\tiny \textbf {Rédigé Mouafo } \textbf{\copyright} \textbf{ENS.MAROUA 2015}}
+
+\renewcommand{\headrulewidth}{1.pt}% filet en haut de page
+\addtolength{\headheight}{1.pt} % espace pour le filet
+\renewcommand{\footrulewidth}{1.pt}% filet en bas de page
+%\addtolength{\footheight}{0.5pt} % espace pour le filet en bas
+\fancypagestyle{plain}{ % pages de tetes de chapitre
+\fancyhead{} % supprime l'entete
+%\fancyfoot{} %supprime le pied de page
+\renewcommand{\headrulewidth}{0pt} % et le filet
+%\renewcommand{\footrulewidth}{0pt}
+}
+\newcommand{\clearemptydoublepage}{%
+\newpage{\pagestyle{plain}\cleardoublepage}}
+\rhead{\textbf{\thepage}} %{\textsl{\rightmark}}
+%\lfoot{\footnotesize{\textbf{Mémoire de MASTER II }}}
+\usepackage{graphicx}
+\usepackage{newlfont}
+\setcounter{secnumdepth}{-2}
+
+%\usepackage{xthesis2} %DAL Thesis Style
+%\usepackage{xtocinc} %Include Table of Contents as the first entry in TOC
+%                     Faculty of Grad Studies insists on this!?
+%\usepackage[active]{srcltx}  %SRC Specials for DVI search
+% Fuzz -------------------------------------------------------------------
+\hfuzz2pt % Don't bother to report over-full boxes if over-edge is < 2pt
+% Line spacing -----------------------------------------------------------
+\newlength{\defbaselineskip}
+\setlength{\defbaselineskip}{\baselineskip}
+\newcommand{\setlinespacing}[1]%
+           {\setlength{\baselineskip}{#1 \defbaselineskip}}
+\newcommand{\doublespacing}{\setlength{\baselineskip}%
+                       {1 \defbaselineskip}}
+\newcommand{\singlespacing}{\setlength{\baselineskip}{\defbaselineskip}}
+% nouvelles commandes-----------------------------------------------
+
+%\frenchspacing
+%\linespread{1.15}
+%%% ----------------------------------------------------------------------
+
+%%% ----------------------------------------------------------------------
+% encodage pour les fontes EC (au lieu de CMR) permettant
+% des c\'{e}sures correctes pour les mots accentu\'{e}s
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{varioref}
+% Document avec accents format windows, la ligne pr\'{e}c\'{e}dente
+\usepackage[english,french]{babel} % ou [french] seulement
+% Charge les options pour l'anglais et le fran\c{c}ais de BABEL
+% et s\'{e}lectionne le fran\c{c}ais comme langue initiale
+% (Chapitre au lieu de Chapter, etc.)
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{t1enc}
+\setcounter{secnumdepth}{3}
+ \makeatletter
+\newcommand{\thechapterwords}
+{ \ifcase \thechapter\or 1\or 2\or 3\or 4\or 5\or
+  6\or 7\or 8\or 9\or Dix\or Onze\fi}
+\def\thickhrulefill{\leavevmode \leaders \hrule height 1ex \hfill \kern \z@}
+\def\@makechapterhead#1{%
+  %\vspace*{50\p@}%
+  \vspace*{15\p@}%
+  {\parindent \z@ \centering \reset@font
+        \thickhrulefill\quad
+        \scshape \@chapapp{} \thechapterwords
+        \quad \thickhrulefill
+        \par\nobreak
+        \vspace*{15\p@}%
+        \interlinepenalty\@M
+        \hrule
+        \vspace*{15\p@}%
+        \Huge \bfseries #1\par\nobreak
+        \par
+        \vspace*{15\p@}%
+        \hrule
+    \vskip 15\p@
+    %\vskip 100\p@
+  }}
+\def\@makeschapterhead#1{%
+  %\vspace*{50\p@}%
+  \vspace*{15\p@}%
+  {\parindent \z@ \centering \reset@font
+        \thickhrulefill
+        \par\nobreak
+        \vspace*{15\p@}%
+        \interlinepenalty\@M
+        \hrule
+        \vspace*{15\p@}%
+        \Huge \bfseries #1\par\nobreak
+        \par
+        \vspace*{15\p@}%
+        \hrule
+    \vskip 30\p@
+    %\vskip 100\p@
+  }}
+  \def\@makechapterhead#1{%
+  %\vspace*{50\p@}%
+  \vspace*{15\p@}%
+  {\parindent \z@ \centering \reset@font
+        \thickhrulefill\quad
+        \scshape \@chapapp{} \thechapterwords
+        \quad \thickhrulefill
+        \par\nobreak
+        \vspace*{15\p@}%
+        \interlinepenalty\@M
+        \hrule
+        \vspace*{15\p@}%
+        \Huge \bfseries #1\par\nobreak
+        \par
+        \vspace*{15\p@}%
+        \hrule
+    \vskip 30\p@
+    %\vskip 100\p@
+  }}
+% encodage pour les fontes EC (au lieu de CMR) permettant
+% des c\'{e}sures correctes pour les mots accentu\'{e}s
+% THEOREMS ---------------------------------------------------------------
+\newtheorem{theo}{\textbf{Th\'eor\`{e}me}}[section]
+\theoremstyle{plain}
+\newtheorem{lem}{\textbf{Lemme}}[section]
+\theoremstyle{plain}
+\newtheorem{act}{\textbf{Activit\'e}}[section]
+\theoremstyle{plain}
+\newtheorem{pro}{\textbf{Proposition}}[section]
+\theoremstyle{plain}
+\newtheorem{met}{\textbf{M\'ethode}}[section]
+\theoremstyle{plain}
+\newtheorem{cla}{\textbf{Résultat}}[section]
+\theoremstyle{plain}
+\newtheorem{exo}{\textbf{Exercice}}[section]
+\theoremstyle{plain}
+\newtheorem{cons}{\textbf{Construction}}[section]
+\theoremstyle{plain}
+\newtheorem{voc}{\textbf{Vocabulaire}}[section]
+\theoremstyle{plain}
+\newtheorem{rmq}{\textbf{Remarque}}[section]
+\theoremstyle{plain}
+\newtheorem{rmqs}{\textbf{Remarques}}[section]
+\theoremstyle{plain}
+\newtheorem{so}{\textbf{Solution}}[section]
+\theoremstyle{plain}
+\newtheorem{voc et def}{\textbf{Vocabulaire et D\'efinition}}[section]
+\theoremstyle{plain}
+\newtheorem{rap}{\textit{Rappels}}[section]
+\theoremstyle{plain}
+\newtheorem{ob}{\textit{observation}}[section]
+\theoremstyle{plain}
+\newtheorem{definition}{\textbf{D\'efinition}}[section]
+\theoremstyle{plain}
+\newtheorem{ex}{\textbf{Exemple}}[section]
+\theoremstyle{plain}
+\newtheorem{cq}{\textbf{Conséquence}}[section]
+\theoremstyle{plain}
+\newtheorem{cexpl}{\textbf{Contre-exemple}}[section]
+\theoremstyle{plain}
+\newtheorem{cor}{\textbf{Corollaire}}[section]
+\theoremstyle{plain}
+\newtheorem{propriete}{\textbf{Propriété}}[section]
+\theoremstyle{plain}
+\newenvironment{prv}[1][Preuve]{\noindent\textbf{#1:} }{\ \rule{0.5em}{0.5em}}
+\theoremstyle{plain}
+\newtheorem{notation}{Notation}[section]
+\newtheorem{exemple}{Exemple}[section]
+%\newtheorem{definition}{Définition}[section]
+%\newtheorem{pro}{Proposition}[section]
+%\newtheorem{cor}{Corollaire}[section]
+%\newtheorem{lem}{Lemme}[section]
+%\newtheorem{theo}{Théorème}[section]
+%\newtheorem{remarque}{Remarque}[section]
+%\newtheorem{exemple}{Exemple}[section]
+%\newtheorem{propriete}{Propriété}[section]
+%\newtheorem{ex}{Exemple}[section]
+%\newtheorem{prv}{Preuve}[section]
+%\newtheorem{cq}{Conséquence}[section]
+\frenchspacing
+\smallskip
+\linespread{1.33}
+%\newtheorem{prev}{\textbf{preuve}}[chapter]
+\newenvironment{prev}[1][Preuve]{\noindent\textbf{#1:} }{\ \rule{0.5em}{0.5em}}
+\theoremstyle{plain}
+%\usepackage[latin1]{inputenc}
+% Document avec accents format windows, la ligne pr\'{e}c\'{e}dente
+\usepackage[english,french]{babel} % ou [french] seulement
+% Charge les options pour l'anglais et le fran\c{c}ais de BABEL
+% et s\'{e}lectionne le fran\c{c}ais comme langue initiale
+% (Chapitre au lieu de Chapter, etc.)
+\usepackage{graphicx}
+\usepackage{t1enc}
+\usepackage[all]{xy}
+\usepackage{pstricks,pstricks-add,pst-math,pst-xkey}
+\usepackage[T1]{fontenc}
+\pagenumbering{arabic}
+\title{\textbf{CRYPTOSYT\`{E}MES BAS\'{E}S SUR LES COURBES ELLIPTIQUES ET ATTAQUES}}
+\author{\textsc{MOUAFO Joseph}}
+\date{\today} % Pour mettre la date du jour, tapez \today.
+%\thanks{note}
+
+%taille 13
+%\normalsize{\fontsize {13}{15}\selectfont}
+%\large{\fontsize {13}{17}\selectfont}
+
+
+%pied de page
+\renewcommand{\footnoterule}{
+\vspace*{0.2cm}
+\hfill  \hfill\hrule}
+\vspace*{0.1cm}
+%\usepackage{subfloat} 
+%\usepackage{bclogo} 
+
+\AddThinSpaceBeforeFootnotes
+\FrenchFootnotes
+
+
+\begin{document}

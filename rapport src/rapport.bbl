@@ -1,0 +1,233 @@
+\begin{thebibliography}{10}
+
+\bibitem{MAR}
+A.C.~Kak A.~Martinez.
+\newblock Pca versus lda.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  23(2):228--233, 2001.
+
+\bibitem{Sou12}
+Souhila~Guerfi Ababsa.
+\newblock {\em Authentification d'individus par reconnaissance de
+  caractéristiques biométriques liées aux visages 2D/3D}.
+\newblock PhD thesis, Université D'EVRY VAL D'ESSONNE, 2008.
+
+\bibitem{SAB}
+Bettahar Abdessettar and Saber Fathi.
+\newblock Reconnaissance et suivi de visages et implémentation en robotique
+  temps-réel.
+\newblock Master's thesis, UNIVERSITE KASDI MERBAH OUARGLA, Faculté des
+  Nouvelles technologies de l’information et de la communication, 2014.
+
+\bibitem{Lal}
+Lalita Acharyab and Tomasz Kasprzycki.
+\newblock La biométrie et son usage par l'État.
+\newblock {\em Bibliothèque du parlement}, Avril 2010.
+
+\bibitem{TIM}
+Timo Ahonen, Abdenour Hadid, and Matti Pietikanen.
+\newblock Face description with local binary patterns: Application to face
+  recognition.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  28(12):2037--2041, December 2006.
+
+\bibitem{Beymer}
+David Beymer and Tomaso Poggio.
+\newblock Face recognition from one example view.
+\newblock {\em Fifth International Conference on Computer Vision (ICCV'95)},
+  1995.
+
+\bibitem{BIOM}
+biometrie online.net.
+\newblock 52\% des consommateurs préfèrent l’authentification biométrique.
+\newblock
+  http://www.biometrie-online.net/actualites/articles/685-52-preferent-l-authe%
+ntification-biometrique, consult\'{e} le 03 Septembre 2016.
+
+\bibitem{Bla01}
+D.~Blackburn, M.~Bone, and P.~J Phillips.
+\newblock Face recognition vendor test 2000, 2001.
+\newblock http://www.frvt.org.
+
+\bibitem{BRU}
+R.~Brunelli and T.~Poggio.
+\newblock Face recognition: features versus templates.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  pages 1042--1062, 1993.
+
+\bibitem{CHEN}
+Jie Chen, Xilin Chen, Jie Yang, Shiguang Shan, Ruiping Wang, and Wen Gao.
+\newblock Optimization of a training set for more robust face dectection.
+\newblock {\em Pattern Recognition}, 42(2009):2828--2840, 2009.
+
+\bibitem{SONG}
+Songcan Chen, Daoqiang Zhang, and Zhi-Hua Zhou.
+\newblock Enhanced (pc)2a for face recognition with one training image per
+  person.
+\newblock {\em Pattern Recognition Letters}, 25(10):1173--1184, 2004.
+
+\bibitem{MAL}
+Antoine Cornuéjols and Laurent Miclet.
+\newblock {\em Apprentissage artificiel. Concepts et algorithmes}.
+\newblock Eyrolles, Paris, 2003.
+
+\bibitem{BEL}
+K.~Etemad and R.~Chellappa.
+\newblock Discriminant analysis for recognition of human face images.
+\newblock {\em Journal of the Optical Society of America A}, 14(8):1724--1733,
+  August 1997.
+
+\bibitem{Gro}
+R.~Gross, J.~Shi, and J.~Cohn.
+\newblock Quo vadis facerecognition?
+\newblock {\em Third Workshop on Empirical Evaluation Methods in Computer
+  Vision}, December 2001.
+
+\bibitem{TUTO}
+Jonathon Hare, Sina Samangooei, and David Dupplaw.
+\newblock The openimaj tutorial.
+\newblock http://openimaj.org/tutorial-pdf.pdf, Mis en ligne en 2016,
+  consult\'{e} le 13 Mai 2016.
+
+\bibitem{bio}
+Peter Hope-Tindall.
+\newblock Technologie fondé sur la biométrie, 2004.
+\newblock
+  http://www.oecd.org/document/20/0,3343,fr\_2649\_34255\_35016029\_1\_1\_1\_1%
+,00.html.
+
+\bibitem{Jai}
+A.K. Jain and B.~Chandrasekaran.
+\newblock Dimensionality and sample size considerations in pattern recognition
+  practice.
+\newblock {\em P.R. Krishnaiah, L.N. Kanal (Eds.), Handbook of Statistics},
+  2:835--855, 1982.
+
+\bibitem{KATO}
+Nei Kato, Masato Suzuki, Shin'ichiro Omachi, Hirotomo Aso, and Yoshiaki Nemoto.
+\newblock A handwritten character recognition system using directional element
+  feature and asymmetric mahalanobis distance.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  21(3):131--137, March 1999.
+
+\bibitem{Gur}
+Gurpreet Kaur, Manbir Sandhu, and Purnima.
+\newblock Facial recognition: Issues, techniques and applications.
+\newblock {\em International Journal of Advanced Research in Computer Science
+  and Software Engineering}, 6(2), February 2016.
+
+\bibitem{cnn}
+CNN~World News.
+\newblock Schiphol backs eye scan security, March 2002.
+\newblock http://www.cnn.com/2002/WORLD/europe/03/27/schiphol.security/.
+
+\bibitem{OPEN}
+The~University of~Southampton.
+\newblock Openimaj history and sponsors.
+\newblock http://openimaj.org/sponsors.html, Mis en ligne le 22 Juin 2016,
+  consult\'{e} le 30 Ao\^{u}t 2016.
+
+\bibitem{Roe12}
+G.~Roethenbaugh.
+\newblock An introduction to biometrics and general history.
+\newblock Biometrics Explained, Section 1, 1998.
+
+\bibitem{Row}
+H.A. Rowley, S.~Baluja, and T.~Kanade.
+\newblock Neural network-based face detection.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  20(1):23--38, 1998.
+
+\bibitem{TRACK}
+J.~M. Saragih, S.~Lucey, and J.~F. Cohn.
+\newblock Face alignment through subspace constrained mean-shifts.
+\newblock {\em International Journal of Computer Vision (ICCV)}, September
+  2009.
+
+\bibitem{Kan}
+H.~Schneiderman and T.~Kanade.
+\newblock Probabilistic modeling of local appearance and spatial relationships
+  for object recognition.
+\newblock {\em Computer Vision and Pattern Recognition, IEEE Computer Society
+  Conference on}, 0(45), 1998.
+
+\bibitem{XIAO}
+Xiaoyang Tan, Songcan Chen, Zhi-Hua Zhou, and Fuyan Zhang.
+\newblock Face recognition from a single image per person: A survey.
+\newblock {\em Pattern Recognition}, 36(2006):1725--1745, 2006.
+
+\bibitem{TAN}
+Xiaoyang Tan and Bill Triggs.
+\newblock Enhanced local texture feature sets for face recognition under
+  difficult lighting conditions.
+\newblock {\em Analysis and Modelling of Faces and Gestures}, 4778(7):168--182,
+  Oct 2007.
+
+\bibitem{OJA}
+T.Ojala, M.~Pietikainen, and T.~Maenpaa.
+\newblock Multiresolution gray-scale and rotation invariant texture
+  classification with local binary patterns.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  24(7):971--987, 2002.
+
+\bibitem{TOLBA}
+A.S. Tolba, A.H. El-Baz, and A.A.~El Harby.
+\newblock Face recognition : A literature review.
+\newblock {\em International Journal of Signal Processing}, 2(2), 2005.
+
+\bibitem{TURK}
+M.~Turk and A.~Pentland.
+\newblock Eigenfaces for recognition.
+\newblock {\em Journal of Cognitive Neurosicence}, 3(1):71--86, 1991.
+
+\bibitem{VIO}
+Paul Viola and Michael Jones.
+\newblock Rapid object detection using a boosted cascade of simple features.
+\newblock {\em Accepted Conference on Computer Vision and Pattern Recognition},
+  296:129--132, 2001.
+
+\bibitem{MAT}
+Mathieu~Van Wambeke.
+\newblock Extraction des caractéristiques pour l'analyse biométrique d’un
+  visage.
+\newblock Master's thesis, Université Catholique de Louvain, Ecole
+  Polytechnique de Louvain, 2010.
+
+\bibitem{WAN}
+Y.~Wang, C.~Chua, and Y.~Ho.
+\newblock Facial feature detection and face recognition from 2d and 3d images.
+\newblock {\em Pattern Recognition Letters}, 23:1191–1202, 2002.
+
+\bibitem{EBGM}
+Laurenz Wiskott, Jean-Marc Fellousc, Norbert Kruger, and Christopher von
+  derMalsburg.
+\newblock Face recognition by elastic bunch graph matching.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  19(7):775--779, December 1997.
+
+\bibitem{WU}
+Jianxin Wu and Zhi-Hua Zhou.
+\newblock Face recognition with one training image per person.
+\newblock {\em Pattern Recognition Letters}, 23(14):1711--1719, 2002.
+
+\bibitem{Adi}
+Y.Adini, Y.Moses, and S.Ullman.
+\newblock Face recognition : The problem of compensating for changes in
+  illumination direction.
+\newblock {\em IEEE Trans. Pattern Analysis \& Machine Intelligence},
+  19(7):721–732, July 1997.
+
+\bibitem{JIAN}
+Jian Yang, David Zhang, Alejandro~F. Frangi, and Jing yu~Yang.
+\newblock Two-dimensional pca: A new approach to appearance-based face
+  representation and recognition.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  26(1):131--137, January 2004.
+
+\bibitem{Yan01}
+Ming-Hsuan Yang, David~J. Kriegman, and Narendra Ahuja.
+\newblock Detecting faces in images : A survey.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  24(1):1746--1762, 2002.
+
+\end{thebibliography}

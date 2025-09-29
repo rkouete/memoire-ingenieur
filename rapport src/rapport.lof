@@ -1,0 +1,39 @@
+\select@language {french}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {II.1}{\ignorespaces march\IeC {\'e} des diff\IeC {\'e}rentes technologies biom\IeC {\'e}triques}}{7}{figure.2.1}
+\contentsline {figure}{\numberline {II.2}{\ignorespaces modes de fonctionnement d'un syst\IeC {\`e}me biom\IeC {\'e}trique}}{8}{figure.2.2}
+\contentsline {figure}{\numberline {II.3}{\ignorespaces \IeC {\'e}tapes de la reconnaissance faciale}}{10}{figure.2.3}
+\contentsline {figure}{\numberline {II.4}{\ignorespaces exemple de variation d'illumination}}{12}{figure.2.4}
+\contentsline {figure}{\numberline {II.5}{\ignorespaces exemple d'expressions faciales}}{13}{figure.2.5}
+\contentsline {figure}{\numberline {II.6}{\ignorespaces exemple de variation de pose}}{13}{figure.2.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {III.1}{\ignorespaces Exemple de 4 caract\IeC {\'e}ristiques de Haar}}{17}{figure.3.1}
+\contentsline {figure}{\numberline {III.2}{\ignorespaces image int\IeC {\'e}grale au point (x,y)}}{18}{figure.3.2}
+\contentsline {figure}{\numberline {III.3}{\ignorespaces calcul de la somme des pixels d'un rectangle}}{18}{figure.3.3}
+\contentsline {figure}{\numberline {III.4}{\ignorespaces cascade de classifieurs forts}}{20}{figure.3.4}
+\contentsline {figure}{\numberline {III.5}{\ignorespaces repr\IeC {\'e}sentation int\IeC {\'e}grale inclin\IeC {\'e}e}}{21}{figure.3.5}
+\contentsline {figure}{\numberline {III.6}{\ignorespaces exemple de faces propres}}{23}{figure.3.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {IV.1}{\ignorespaces op\IeC {\'e}rateur LBP }}{34}{figure.4.1}
+\contentsline {figure}{\numberline {IV.2}{\ignorespaces LBP \IeC {\'e}tendue}}{34}{figure.4.2}
+\contentsline {figure}{\numberline {IV.3}{\ignorespaces illustration de l'op\IeC {\'e}rateur basique LTP}}{36}{figure.4.3}
+\contentsline {figure}{\numberline {IV.4}{\ignorespaces exemple de division d'un code TLP}}{37}{figure.4.4}
+\contentsline {figure}{\numberline {IV.5}{\ignorespaces Illustration du pr\IeC {\'e}traitement de l'image de Tan et Triggs}}{37}{figure.4.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {V.1}{\ignorespaces exemples d'images provenant de la base ORL}}{40}{figure.5.1}
+\contentsline {figure}{\numberline {V.2}{\ignorespaces exemples d'images provenant de la base YALE }}{40}{figure.5.2}
+\contentsline {figure}{\numberline {V.3}{\ignorespaces interface d'accueil du syst\IeC {\`e}me de reconnaissance}}{43}{figure.5.3}
+\contentsline {figure}{\numberline {V.4}{\ignorespaces choix de la base d'image ORL}}{45}{figure.5.4}
+\contentsline {figure}{\numberline {V.5}{\ignorespaces apprentissage de l'algorithme}}{46}{figure.5.5}
+\contentsline {figure}{\numberline {V.6}{\ignorespaces quelques faces propres de la base ORL}}{47}{figure.5.6}
+\contentsline {figure}{\numberline {V.7}{\ignorespaces chargement d'une image de test}}{48}{figure.5.7}
+\contentsline {figure}{\numberline {V.8}{\ignorespaces visage reconnue}}{48}{figure.5.8}
+\contentsline {figure}{\numberline {V.9}{\ignorespaces exemple de reconnaissance sur la base de donn\IeC {\'e}es YALE}}{49}{figure.5.9}
+\contentsline {figure}{\numberline {V.10}{\ignorespaces quelques images de la base de donn\IeC {\'e}es 'local'}}{49}{figure.5.10}
+\contentsline {figure}{\numberline {V.11}{\ignorespaces reconnaissance \IeC {\`a} partir d'un flux vid\IeC {\'e}o}}{50}{figure.5.11}
+\contentsline {figure}{\numberline {V.12}{\ignorespaces algorithme LBP appliqu\IeC {\'e} sur la base YALE}}{51}{figure.5.12}
+\contentsline {figure}{\numberline {V.13}{\ignorespaces algorithme LBP appliqu\IeC {\'e} \IeC {\`a} la base ORL}}{51}{figure.5.13}
+\contentsline {figure}{\numberline {V.14}{\ignorespaces d\IeC {\'e}tection et capture du visage}}{52}{figure.5.14}
+\contentsline {figure}{\numberline {V.15}{\ignorespaces enregistrement du visage}}{52}{figure.5.15}
+\contentsline {figure}{\numberline {V.16}{\ignorespaces suivi du visage}}{53}{figure.5.16}
